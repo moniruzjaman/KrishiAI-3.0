@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#0A8A1F" />
+    <meta name="description" content="বাংলাদেশের কৃষকদের জন্য একটি সমন্বিত এআই ইকোসিস্টেম। স্মার্ট রোগ নির্ণয়, স্যাটেলাইট মনিটরিং এবং বৈজ্ঞানিক পঞ্জিকা।" />
+    
+    <!-- OpenGraph / Social Sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Krishi AI: স্মার্ট কৃষি ইকোসিস্টেম" />
+    <meta property="og:description" content="BARI/BRRI প্রটোকল ভিত্তিক এআই রোগ শনাক্তকরণ ও কৃষি সমাধান।" />
+    <meta property="og:image" content="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjI1IiBmaWxsPSIjMEE4QTFGIi8+PC9zdmc+" />
+
+    <!-- PWA and Legacy Mobile Support -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Krishi AI" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    
+    <!-- App Icons -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjI1IiBmaWxsPSIjMEE4QTFGIi8+PHBhdGggZD0iTTUwIDk1QzUwIDk1IDg1IDc1IDg1IDQwQzg1IDE1IDY1IDUgNTAgNUMzNSA1IDE1IDE1IDE1IDQwQzE1IDc1IDUwIDk1IDUwIDk1WiIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJNNTAgODVDNTAgODUgNzUgNjggNzUgNDBDNzUgMjIgNjIgMTUgNTAgMTVDMzggMTUgMjUgMjIgMjUgNDBDMjUgNjggNTAgODUgNTAgODVaIiBmaWxsPSIjMEE4QTFGIi8+PC9zdmc+" />
+    
+    <link rel="manifest" href="/manifest.json" />
+    <title>Krishi AI: স্মার্ট কৃষি ইকোসিস্টেম</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Hind Siliguri', sans-serif; -webkit-tap-highlight-color: transparent; }
+      .scrollbar-hide::-webkit-scrollbar { display: none; }
+      .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+      @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+      .animate-fade-in-up { animation: fadeInUp 0.7s cubic-bezier(0.23, 1, 0.32, 1) forwards; }
+      .animate-fade-in { animation: fadeIn 0.8s ease-out forwards; }
+      @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+      @keyframes scanningLine { 0% { top: 0%; opacity: 0; } 5% { opacity: 1; } 95% { opacity: 1; } 100% { top: 100%; opacity: 0; } }
+      .animate-scanning-line { animation: scanningLine 3s ease-in-out infinite; }
+      @keyframes cameraFlash { 0% { opacity: 0; } 50% { opacity: 1; } 100% { opacity: 0; } }
+      .animate-camera-flash { animation: cameraFlash 0.4s ease-out forwards; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "recharts": "https://esm.sh/recharts@^3.6.0",
+    "firebase/": "https://esm.sh/firebase@^12.7.0/",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@^2.89.0",
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-50 text-gray-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
